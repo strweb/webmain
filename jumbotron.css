@@ -50,11 +50,7 @@ body {
   width: 45%;
   margin: 0 auto;
 }
-.video-container .ctabuttons .inner {
-  font-size: 1em;
-  width: 70%;
-  margin: 0 auto;
-}
+
 .video-container .link {
   position: absolute;
   bottom: 3em;
@@ -77,17 +73,30 @@ body {
 }
 
 .toptagline {
+	font-size: 4em;
 	font-family: 'Permanent Marker', cursive;
 }
 
 .bottagline {
 	font-family: 'Anton', bold;
-	font-size: 8em;
+	font-size: 6em;
 }
 	
 .headerctabutton {
-	height:75%;
-	width:75%;
+	padding:1px;
+	margin:1px;
+	border-width:0px;
+	height: 95%;
+	width: 95%;
+}
+
+.headerctabuttongroup {
+	width:100%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
 .sectiononedesign {
@@ -104,6 +113,23 @@ body {
 	font-family: 'Anton', bold;
 	font-size: 3em;
 	padding-top: 40px;
+}
+
+@media all and (max-width: 1000px) {
+   .bottagline {
+    font-size: 2em;
+  }
+  .toptagline {
+	  font-size: 1em;
+  }
+  .headerctabutton {
+	  height:75%;
+	  width:75%;
+  }
+  .video-container .title-container {
+	  top:10%;
+  }
+
 }
 
 /* THUMBNAIL SHIT */
