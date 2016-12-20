@@ -1,0 +1,145 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  /*padding-top: 50px;*/
+  padding-bottom: 20px;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .ctabuttons .inner {
+  font-size: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+.toptagline {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.bottagline {
+	font-family: 'Anton', bold;
+	font-size: 8em;
+}
+	
+.headerctabutton {
+	height:75%;
+	width:75%;
+}
+
+.sectiononedesign {
+	/*background-color: #B2F893;*/
+
+}
+
+.btn-primary {
+    background: #cd432b;
+	border-color: #cd432b;
+}
+
+.sectionheading {
+	font-family: 'Anton', bold;
+	font-size: 3em;
+	padding-top: 40px;
+}
+
+/* THUMBNAIL SHIT */
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail > h4 {
+    padding: 7px 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.thumbnail h4 .info {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0.6em;
+    padding-left: 15px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    cursor:  pointer;
+}
+
+.thumbnail h4 .info > span {
+    margin-right: 10px;   
+}
+
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail a.btn {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
