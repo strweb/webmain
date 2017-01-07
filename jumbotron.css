@@ -132,6 +132,11 @@ body {
 
 }
 
+#featuredevents a {
+	background-color: #bc5149;
+	color: white;
+}
+
 /* THUMBNAIL SHIT */
 .thumbnail {
     position: relative;
